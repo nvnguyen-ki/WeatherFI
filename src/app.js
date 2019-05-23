@@ -43,11 +43,18 @@ app.get('/help', (req, res) => {
 
 // if typed in url with /weather, data below is shown
 app.get('/weather', (req, res) => {
+  if(!req.query.address) {
+    return res.send({
+      error: "please provide an address"
+    })
+  }
   res.send({
     forecast: 'Sunny',
-    location: 'Sumter'
+    location: 'Sumter',
+    address: req.query.address
   })
 })
+
 
 app.get('/help/*', (req,res) => {
   res.render('404page',{
