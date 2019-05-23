@@ -4,14 +4,16 @@ body{
   max-width:650px;
   margin: 0 auto;
   padding: 0 16px;
-
+  background: url(https://media.giphy.com/media/8rarA6dxj4xlS/giphy.gif);
+  background-size: cover;
+  background-position: center;
   display:flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
 footer{
-  color: #888888;
+  color: black;
   border-top: 1px solid #eeeeee;
   margin-top: 16px;
   padding: 16 0;
@@ -21,6 +23,11 @@ footer{
 header {
   margin-top: 16px;
   margin-bottom: 46px;
+  background: url(https://i.gifer.com/146u.gif);
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  color: transparent; // set to transparent, otherwise won't see the background
 }
 
 h1{
@@ -29,7 +36,7 @@ h1{
 }
 
 header a{
-  color: #888888;
+  color: black;
   margin-right: 16px;
   text-decoration: none;
 }

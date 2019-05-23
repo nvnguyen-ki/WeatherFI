@@ -21,7 +21,7 @@ const publicDirPath = path.join(__dirname, '../public')
 app.use(express.static(publicDirPath))
 app.get('', (req, res) => {
   res.render('index', {
-    title: 'Weather app',
+    title: 'Weather',
     name: 'created by Nguyen'
   }) //use render for hbs
 })
