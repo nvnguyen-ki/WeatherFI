@@ -8,7 +8,7 @@ const messageTwo = document.querySelector('#message-2')
 
 // rendering loading message and empty p
 
-messageOne.textContent = 'Loading...'
+messageOne.textContent = ''
 messageTwo.textContent = ''
 
 
