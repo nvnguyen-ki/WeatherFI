@@ -5,6 +5,8 @@ const forecast = require('./utils/forecast.js')
 
 // using hbs npm
 const hbs = require('hbs')
+// accessing heroku port
+const port = process.env.PORT || 3000
 
 // define paths for express configa
 const viewsPath = path.join(__dirname, '../templates/views')
@@ -70,7 +72,7 @@ app.get('/weather', (req, res) => {
           location: location,
           address: req.query.address
         })
-      
+
 
       })
      }
@@ -93,6 +95,6 @@ app.get('*', (req, res) => {
   error: 'page not found'})
 })
 
-app.listen(3000, () => {
-  console.log('server is up on port 3000')
+app.listen(port, () => {
+  console.log('server is up on port ' + port)
 })
