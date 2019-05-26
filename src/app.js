@@ -41,7 +41,7 @@ app.get('/help', (req, res) => {
   res.render('help', {
     title: '[Unknown]',
     helptext: 'you get none',
-    name: 'created by Nguyen'
+    name: 'listen to some lofi'
   }) //use render for hbs
 })
 
