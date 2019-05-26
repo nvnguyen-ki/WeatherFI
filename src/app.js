@@ -32,14 +32,14 @@ app.get('', (req, res) => {
 
 app.get('/about', (req, res) => {
   res.render('about', {
-    title: 'About',
+    title: '[Unknown]',
     name: 'created by Nguyen'
   }) //use render for hbs
 })
 
 app.get('/help', (req, res) => {
   res.render('help', {
-    title: 'Help',
+    title: '[Unknown]',
     helptext: 'you get none',
     name: 'created by Nguyen'
   }) //use render for hbs
