@@ -9,8 +9,8 @@ const forecast = (latitude, longitude, callback) => {
       callback('location error', undefined)
     } else {
       callback(undefined, {
-        data: 'it seems to be ' + body.currently.summary + '. Currently at a whopping ' + body.currently.temperature + ' degree fahrenheit. ' +'<\b\r\>'
-        + 'Another useful information: It has been '+ body.daily.data[0].summary
+        data: 'it seems to be ' + body.currently.summary + '. Currently at a whopping ' + body.currently.temperature + ' degree fahrenheit. '
+        +'Another useful information: It has been '+ body.daily.data[0].summary
       }
       )
     }

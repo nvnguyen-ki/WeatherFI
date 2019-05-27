@@ -1,16 +1,17 @@
 body{
   color: #333333;
-  font-family:Georgia;
+  font: 14px "Century Gothic", Futura, sans-serif;
   max-width:650px;
   margin: 0 auto;
   padding: 0 16px;
-  background: url(https://media.giphy.com/media/8rarA6dxj4xlS/giphy.gif);
+  background: url(https://data.whicdn.com/images/281328506/original.gif);
   background-size: cover;
   background-position: center;
   display:flex;
   flex-direction: column;
   min-height: 100vh;
 }
+
 
 footer{
   color: black;
@@ -23,11 +24,11 @@ footer{
 header {
   margin-top: 16px;
   margin-bottom: 46px;
-  background: url(https://i.gifer.com/146u.gif);
+  color: white;
   background-size: cover;
   background-position: center;
   -webkit-background-clip: text;
-  color: transparent; // set to transparent, otherwise won't see the background
+  /* color: transparent; // set to transparent, otherwise won't see the background */
 }
 
 h1{
@@ -36,7 +37,7 @@ h1{
 }
 
 header a{
-  color: black;
+  color: white;
   margin-right: 16px;
   text-decoration: none;
 }
@@ -65,4 +66,25 @@ button{
 }
 p{
   color:white;
+/* }
+#question{
+  display: inline;
+	position: relative;
+	font: 15px Helvetica, Sans-Serif;
+	
+	color: rgba(115, 255, 0, 0.432);
 }
+#question:after {
+    content: "Check the weather outside?";
+	  position: absolute; left: 0px; top: 1px;
+	  color: rgba(0, 174, 255, 0.651);    
+}
+#message-1{
+  display: inline;
+	position: relative;
+	font: 15px Helvetica, Sans-Serif;
+	
+	color: rgba(0, 255, 191, 0.705);
+} */
+
+
