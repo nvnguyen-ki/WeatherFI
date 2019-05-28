@@ -1,8 +1,10 @@
+
 body{
   color: #333333;
   font: 14px "Century Gothic", Futura, sans-serif;
   max-width:650px;
   margin: 0 auto;
+  
   padding: 0 16px;
   background: url(https://data.whicdn.com/images/281328506/original.gif);
   background-size: cover;
@@ -10,11 +12,12 @@ body{
   display:flex;
   flex-direction: column;
   min-height: 100vh;
+  
 }
 
 
 footer{
-  color: black;
+  color: white;
   border-top: 1px solid #eeeeee;
   margin-top: 16px;
   padding: 16 0;
@@ -24,6 +27,7 @@ footer{
 header {
   margin-top: 16px;
   margin-bottom: 46px;
+  
   color: white;
   background-size: cover;
   background-position: center;
@@ -38,15 +42,11 @@ h1{
 
 header a{
   color: white;
+  
   margin-right: 16px;
   text-decoration: none;
 }
 
-.portrait{
-  width: 150px;
-  height: 150px;
-
-}
 
 main-content{
   flex-grow: 1;
@@ -66,7 +66,12 @@ button{
 }
 p{
   color:white;
-/* }
+}
+
+.title {
+  font-weight: 100;
+}
+/*
 #question{
   display: inline;
 	position: relative;
@@ -86,5 +91,4 @@ p{
 	
 	color: rgba(0, 255, 191, 0.705);
 } */
-
 
