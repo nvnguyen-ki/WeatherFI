@@ -13,6 +13,7 @@ messageTwo.textContent = ''
 
 
 
+
 weatherForm.addEventListener('submit', (e) => {
   e.preventDefault()
   const location = search.value

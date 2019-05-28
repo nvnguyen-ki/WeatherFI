@@ -1,20 +1,48 @@
 
 body{
-  color: #333333;
+  color: white;
   font: 14px "Century Gothic", Futura, sans-serif;
   max-width:650px;
   margin: 0 auto;
-  
   padding: 0 16px;
-  background: url(https://data.whicdn.com/images/281328506/original.gif);
+  background-image: url(https://data.whicdn.com/images/281328506/original.gif);
+  animation: chbg 320s ease-in-out;
+  
   background-size: cover;
   background-position: center;
   display:flex;
   flex-direction: column;
   min-height: 100vh;
-  
 }
 
+@keyframes chbg {
+  50% {
+    background:url(https://media.giphy.com/media/1zgzISaYrnMAYRJJEr/giphy.gif);
+    background-size:cover;
+    background-position: center;
+  }
+  60% {
+    background:url(https://media.giphy.com/media/GErcIBbuuO3h6/giphy.gif);
+    background-size:cover;
+    background-position: center;
+  }
+
+  70% {
+    background:url(https://media.giphy.com/media/37Th7OtVaqxaw/giphy.gif);
+    background-size:cover;
+    background-position: center;
+  }
+
+  
+  
+}
+/* body:hover{
+  background: url(https://data.whicdn.com/images/270773617/original.gif);
+  background-size: cover;
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh;
+} */
 
 footer{
   color: white;
