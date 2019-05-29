@@ -12,6 +12,7 @@ body{
   display:flex;
   flex-direction: column;
   min-height: 100vh;
+  
 }
 /* background changer */
 /* @keyframes chbg {
@@ -146,7 +147,7 @@ p{
 }
 
 .button-rain{
-  position: absolute; left: 547px; top: 155px;
+  position: relative; left: 0px; top: 195px;
   border: none;  border-radius: 50px;
   height: 40px;
   width: 40px;
@@ -155,6 +156,9 @@ p{
   background-position: center;
   border-radius: 6px; 
    border: none;  
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box; 
 }
 
 .button-rain:focus{
@@ -163,7 +167,7 @@ p{
 }
 
 .button-partlycloudy{
-  position: absolute; left: 615px; top: 155px;
+  position: relative; left: 25px; top: 195px;
   border: none;  border-radius: 50px;
   height: 40px;
   width: 40px;
@@ -172,6 +176,9 @@ p{
   background-size:cover;
   border-radius: 6px; 
    border: none;  
+   -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box; 
 }
 
 .button-partlycloudy:focus{
@@ -180,7 +187,7 @@ p{
 }
 
 .button-sunny{
-  position: absolute; left: 685px; top: 155px;
+  position: relative; left: 48px; top: 195px;
   border: none;  border-radius: 50px;
   height: 40px;
   width: 40px;
@@ -189,6 +196,9 @@ p{
   background-size:cover;
   border-radius: 6px; 
    border: none;  
+   -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box; 
 }
 
 .button-sunny:focus{
@@ -198,7 +208,7 @@ p{
 
 
 .button-windy{
-  position: absolute; left: 750px; top: 155px;
+  position: relative; left: 70px; top: 195px;
   border: none;  border-radius: 50px;
   height: 40px;
   width: 40px;
@@ -207,6 +217,9 @@ p{
   background-size:cover;
   border-radius: 6px; 
    border: none;  
+   -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box; 
 }
 
 .button-windy:focus{
