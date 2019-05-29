@@ -146,7 +146,7 @@ p{
 }
 
 .button-rain{
-  position: absolute; left: 545px; top: 155px;
+  position: absolute; left: 547px; top: 155px;
   border: none;  border-radius: 50px;
   height: 40px;
   width: 40px;
@@ -163,7 +163,7 @@ p{
 }
 
 .button-partlycloudy{
-  position: absolute; left: 600px; top: 155px;
+  position: absolute; left: 615px; top: 155px;
   border: none;  border-radius: 50px;
   height: 40px;
   width: 40px;
@@ -180,7 +180,7 @@ p{
 }
 
 .button-sunny{
-  position: absolute; left: 655px; top: 155px;
+  position: absolute; left: 685px; top: 155px;
   border: none;  border-radius: 50px;
   height: 40px;
   width: 40px;
@@ -198,7 +198,7 @@ p{
 
 
 .button-windy{
-  position: absolute; left: 710px; top: 155px;
+  position: absolute; left: 750px; top: 155px;
   border: none;  border-radius: 50px;
   height: 40px;
   width: 40px;
