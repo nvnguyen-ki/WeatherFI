@@ -6,6 +6,13 @@ const search = document.querySelector('input')
 const messageOne = document.querySelector('#message-1')
 const messageTwo = document.querySelector('#message-2')
 
+// const button_rain = document.querySelector('.button-rain')
+
+// function rain(){
+//   document.body.style.background = 'url(https://data.whicdn.com/images/281328506/original.gif)';
+  
+// }
+// button_rain.addEventListener("click", rain);
 // rendering loading message and empty p
 
 messageOne.textContent = ''

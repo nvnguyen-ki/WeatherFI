@@ -6,15 +6,15 @@ body{
   margin: 0 auto;
   padding: 0 16px;
   background-image: url(https://data.whicdn.com/images/281328506/original.gif);
-  animation: chbg 320s ease-in-out;
+  transition: background-image 0.4s ease-in-out;
   background-size: cover;
   background-position: center;
   display:flex;
   flex-direction: column;
   min-height: 100vh;
 }
-
-@keyframes chbg {
+/* background changer */
+/* @keyframes chbg {
   50% {
     background:url(https://media.giphy.com/media/1zgzISaYrnMAYRJJEr/giphy.gif);
     background-size:cover;
@@ -34,7 +34,7 @@ body{
 
   
   
-}
+} */
 /*// hover code
  body:hover{
   background: url(https://data.whicdn.com/images/270773617/original.gif);
@@ -139,25 +139,77 @@ p{
   background-color: #008CBA;      
   color: white; 
 }
+/* removing the blue outline */
+.searchbutton:focus{
+  outline:none !important;
+  border: none;
+}
 
 .button-rain{
-  position: absolute; left: 240px; top: 90px;
+  position: absolute; left: 545px; top: 155px;
   border: none;  border-radius: 50px;
-  height: 100px;
-  width: 100px;
+  height: 40px;
+  width: 40px;
   background: url(https://cdn.dribbble.com/users/141880/screenshots/1969172/weatherlorerain.gif);
   background-size:cover;
   background-position: center;
+  border-radius: 6px; 
+   border: none;  
+}
+
+.button-rain:focus{
+  outline:none !important;
+  border: none;
+}
+
+.button-partlycloudy{
+  position: absolute; left: 600px; top: 155px;
+  border: none;  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+  background-image: url(https://media.giphy.com/media/Kzn8Xonei7aPcoIaCd/giphy.gif);
+  background-position: center;
+  background-size:cover;
+  border-radius: 6px; 
+   border: none;  
+}
+
+.button-partlycloudy:focus{
+  outline:none !important;
+  border: none;
 }
 
 .button-sunny{
-  position: absolute; left: 240px; top: 230px;
+  position: absolute; left: 655px; top: 155px;
   border: none;  border-radius: 50px;
-  height: 100px;
-  width: 100px;
-  background-image: url(https://media.giphy.com/media/giQ8fxb8w2wKsrOefM/giphy.gif);
+  height: 40px;
+  width: 40px;
+  background-image: url(https://static1.squarespace.com/static/5396504ce4b053c664d7933e/55e2707de4b06620ed822910/55e42d92e4b042e7025c1c86/1441017417177/Sun.gif);
   background-position: center;
   background-size:cover;
+  border-radius: 6px; 
+   border: none;  
+}
+
+.button-sunny:focus{
+  outline:none !important;
+  border: none;
 }
 
 
+.button-windy{
+  position: absolute; left: 710px; top: 155px;
+  border: none;  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+  background-image: url(https://static.eau-thermale-avene.com/sites/files-sg/projects/solairekw-2018-sg/assets/images/global/anim-icon--wind.gif);
+  background-position: center;
+  background-size:cover;
+  border-radius: 6px; 
+   border: none;  
+}
+
+.button-windy:focus{
+  outline:none !important;
+  border: none;
+}
