@@ -33,15 +33,15 @@ app.get('', (req, res) => {
 app.get('/about', (req, res) => {
   res.render('about', {
     title: '[Unknown]',
-    name: 'listen to some lofi'
+    name: ''
   }) //use render for hbs
 })
 
 app.get('/help', (req, res) => {
   res.render('help', {
     title: '[Unknown]',
-    helptext: 'you get none',
-    name: 'listen to some lofi'
+    helptext: '',
+    name: ''
   }) //use render for hbs
 })
 
@@ -68,7 +68,7 @@ app.get('/weather', (req, res) => {
           return res.send({error})
         }
         res.send({
-          forecast: forecastData.data,
+          forecast: forecastData,
           location: location,
           address: req.query.address
         })

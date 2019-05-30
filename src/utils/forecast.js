@@ -9,10 +9,13 @@ const forecast = (latitude, longitude, callback) => {
       callback('location error', undefined)
     } else {
       callback(undefined, {
-        data: 'it seems to be ' + body.currently.summary + '. Currently ' + body.currently.temperature + ' degree fahrenheit. '
-        + 'It has been '+ body.daily.data[0].summary
-      }
-      )
+        dataSum: 'it seems to be ' + body.currently.icon + '. Currently ' + body.currently.temperature + ' degree fahrenheit. '
+        + 'It has been '+ body.daily.data[0].summary,
+        singleData: body.currently.icon,
+        windspeed: 'With a windspeed of : '+body.currently.windSpeed + 'mph',
+        singlewindSpeed: body.currently.windSpeed
+        
+      })
     }
   })
 }

@@ -17,21 +17,16 @@
   <div class="main-content">
     <button class="button-rain" style="vertical-align:middle">
     </button>
-       
-    <button class="button-partlycloudy" style="vertical-align:middle">
-      
+    <button class="button-partlycloudy" style="vertical-align:middle">      
     </button>
-
     <button class="button-sunny" style="vertical-align:middle">
-      
     </button>
-
     <button class="button-windy" style="vertical-align:middle">
       
     </button>
       <script type="text/javascript">
        
-        document.querySelector(".button-rain").addEventListener("click", function(){
+          document.querySelector(".button-rain").addEventListener("click", function(){
           document.querySelector("body").style.background = 'url(https://data.whicdn.com/images/281328506/original.gif)';
           document.querySelector("body").style.backgroundSize = 'cover';
           document.querySelector("body").style.backgroundPosition = 'center';
@@ -46,7 +41,7 @@
           document.getElementById("songsrc").src = 'audio/sunny-song.mp3';
         })
 
-        document.querySelector(".button-sunny").addEventListener("click", function(){
+          document.querySelector(".button-sunny").addEventListener("click", function(){
           document.querySelector("body").style.background = 'url(https://data.whicdn.com/images/140771342/original.gif)';
           document.querySelector("body").style.backgroundSize = 'cover';
           document.querySelector("body").style.backgroundPosition = 'center';
@@ -70,6 +65,7 @@
     </form>
     <p id="message-1"></p>
     <p id="message-2"></p>
+    <p id="message-3"></p>
   </div>
 
   {{>footer}}
