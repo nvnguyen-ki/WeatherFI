@@ -65,7 +65,7 @@ header a:hover {
 }
 /* Styling the continue linker */
 #slider a {
-	position: relative; left: 770px; top: 900px;
+	position: relative; left: 810px; top: 900px;
 	display: inline-block;
 	margin: 15px 25px;
 	outline: none;
@@ -162,7 +162,7 @@ header a:hover {
 }
 
 #arrow{
-  position: absolute; left: 870px; top: 830px;
+  position: absolute; left: 910px; top: 830px;
   
   
 }
