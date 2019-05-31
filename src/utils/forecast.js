@@ -10,7 +10,7 @@ const forecast = (latitude, longitude, callback) => {
     } else {
       callback(undefined, {
         dataSum: 'it seems to be ' + body.currently.icon + '. Currently ' + body.currently.temperature + ' degree fahrenheit. '
-        + 'It has been '+ body.daily.data[0].summary,
+        + 'It will be '+ body.daily.data[0].summary,
         singleData: body.currently.icon,
         windspeed: 'With a windspeed of : '+body.currently.windSpeed + 'mph',
         singlewindSpeed: body.currently.windSpeed

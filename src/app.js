@@ -2,6 +2,10 @@ const express = require('express')
 const path = require('path')
 const geocode = require('./utils/geocode.js')
 const forecast = require('./utils/forecast.js')
+const React = require('react')
+const ReactDOM = require('react-dom')
+
+
 
 // using hbs npm
 const hbs = require('hbs')
@@ -16,7 +20,6 @@ const partialPath = path.join(__dirname, '../templates/partials')
 app.set('view engine', 'hbs')
 app.set('views', viewsPath)
 hbs.registerPartials(partialPath)
-
 
 // getting resource at url
 // using path to go to public dir that has the index.html
