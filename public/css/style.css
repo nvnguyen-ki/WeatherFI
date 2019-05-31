@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:500);
+
 body{
   color: white;
   font: 14px "Century Gothic", Futura, sans-serif;
@@ -9,12 +10,17 @@ body{
   
 }
 
+html,body {
+  scroll-behavior: smooth;
+    
+}
+
 
 footer{
   color: white;
   border-top: 0.5px solid #eeeeee;
-  margin-top: 16px;
-  
+  margin-top: 120px;
+  overflow:hidden;
   font-family: Raleway;
 }
 
@@ -23,7 +29,7 @@ header {
   margin-bottom: 45px;
   font-family: Raleway;
   color: white;
-  
+  overflow:hidden;
   
   /* color: transparent; // set to transparent, otherwise won't see the background */
 }
@@ -33,6 +39,7 @@ h1{
   margin-bottom: 16px;
   font-family: Raleway;
   margin-top:0; 
+  overflow:hidden;
 }
 
 header a{
@@ -40,7 +47,7 @@ header a{
   margin-right: 16px;
   text-decoration: none;
   font-family: Raleway;
-  
+  overflow:hidden;
 }
 /* shadow on tabs */
 header a:hover {
@@ -69,8 +76,32 @@ header a:hover {
 #content-pos{
   display: block;
   width:800px;
+ 
   margin-left: auto;
   margin-right: auto;
+}
+
+
+#highlow{
+  position:absolute;
+  top:250px;
+
+}
+
+#message-1{
+  position: absolute;
+  top:225px;
+ 
+}
+#message-2{
+  position: absolute;
+  top:275px;
+  
+}
+#message-3{
+  position: absolute;
+  top:300px;
+  
 }
 
 /* Styling the continue linker */
@@ -200,14 +231,13 @@ header a:hover {
 
 #section2 {
   flex-grow: 1;
-  background:crimson;
-  transition: background-image 0.4s ease-in-out;
+  background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 100vh;
-  max-width: 1000vh;
+  height:969px;
+  overflow:hidden;
   display:flex;
   flex-direction: column;
   margin: 0 auto;
@@ -410,7 +440,3 @@ p{
 
 
 
-html {
-  scroll-behavior: smooth;
-
-}

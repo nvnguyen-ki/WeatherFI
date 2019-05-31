@@ -2,12 +2,10 @@
 //  this gets the item that is searched on website
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
+const highlow = document.querySelector('#highlow')
 const messageOne = document.querySelector('#message-1')
 const messageTwo = document.querySelector('#message-2')
 const messageThree = document.querySelector('#message-3')
-messageOne.textContent = ''
-messageTwo.textContent = ''
-messageThree.textContent = ''
 
 
 
@@ -23,6 +21,7 @@ weatherForm.addEventListener('submit', (e) => {
       messageOne.textContent = data.location
       messageTwo.textContent = data.forecast.dataSum
       messageThree.textContent = data.forecast.windspeed
+      highlow.textContent = data.forecast.highlow
       // changes atmosphere depending on weather at location
       if(data.forecast.singleData == 'wind') {
         document.querySelector(".main-content").style.background = 'url(https://i.pinimg.com/originals/ac/f3/0e/acf30ee54206580bca0cb291eab559f4.gif)';
