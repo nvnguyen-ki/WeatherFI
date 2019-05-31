@@ -3,7 +3,7 @@ body{
   color: white;
   font: 14px "Century Gothic", Futura, sans-serif;
   margin:0 auto; 
-  padding:0 auto; 
+  
   font-family: Raleway;
   display:inline;
   
@@ -62,10 +62,19 @@ header a:hover {
   flex-direction: column;
   margin: 0 auto;
   padding: 0 16px;
+  width: 0 auto;
+  height: 400px;
 }
+#content-pos{
+  display: block;
+  width:800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Styling the continue linker */
 #slider a {
-	position: relative; left: 810px; top: 900px;
+	position: relative; left: 280px; top: 560px;
 	display: inline-block;
 	margin: 15px 25px;
 	outline: none;
@@ -75,7 +84,8 @@ header a:hover {
 	letter-spacing: 1px;
 	font-weight: 400;
 	text-shadow: 0 0 1px rgba(255,255,255,0.3);
-	font-size: 1.35em;
+  font-size: 1.35em;
+  
 }
 
 #slider a:hover,
@@ -162,7 +172,11 @@ header a:hover {
 }
 
 #arrow{
-  position: absolute; left: 910px; top: 830px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 928px;
+  width: 740px; 
   
   
 }
@@ -195,9 +209,6 @@ header a:hover {
   padding: 0 16px;
 }
 
-#content-pos{
-  position: absolute; left: 600px; top: 0px;
-}
 
 input{
   border: 1px solid #cccccc;
@@ -220,30 +231,7 @@ p{
 .title {
   font-weight: 100;
 }
-/*
-#question{
-  display: inline;
-	position: relative;
-	font: 15px Helvetica, Sans-Serif;
-	
-	color: rgba(115, 255, 0, 0.432);
-}
-#question:after {
-    content: "Check the weather outside?";
-	  position: absolute; left: 0px; top: 1px;
-	  color: rgba(0, 174, 255, 0.651);    
-}
-#message-1{
-  display: inline;
-	position: relative;
-	font: 15px Helvetica, Sans-Serif;
-	
-	color: rgba(0, 255, 191, 0.705);
-} */
 
-/*
-  search button hover effect
-*/
 .searchbutton{
   font-family: Raleway;
   color: #0099CC; 
@@ -265,7 +253,7 @@ p{
 
 .button-rain{
   position: fixed; left: 0px; top: 0px;
-  
+ 
   border: none;  
   height: 45px;
   width: 45px;
@@ -368,13 +356,13 @@ p{
   
  
   font-family: Raleway;
-  position: fixed; left: 0px; top: 841px;
+  position: fixed; left: 0px; top: 836px;
   background: url(https://cdn.pixabay.com/photo/2017/11/10/05/34/play-2935460_960_720.png);
   background-size: cover;
   background-position: center;
   height: 45px;
   width: 45px;
-  
+  border-radius: 24px;
 }
 #play:focus{
   outline:none !important;
@@ -384,25 +372,19 @@ p{
 
 #mute{
   font-family: Raleway;
-  position: fixed; left: 0px; top: 883px;
+  position: fixed; left: 0px; top: 880px;
   background: url(https://cdn.pixabay.com/photo/2017/11/10/05/34/sound-2935467_960_720.png);
   background-size: cover;
   background-position: center;
   height: 45px;
   width: 45px;
-  
+  border-radius: 24px
 }
 #mute:focus{
   outline:none !important;
   border: 2px solid gold;
 }
-
-
-
-
 #pause{
-  
-  
   font-family: Raleway;
   position: fixed; left: 0px; top: 925px;
   background: url(https://cdn.pixabay.com/photo/2017/11/10/05/34/pause-2935459_960_720.png);
@@ -410,6 +392,7 @@ p{
   background-position: center;
   height: 45px;
   width: 45px;
+  border-radius: 24px
 }
 #pause:focus{
   outline:none !important;

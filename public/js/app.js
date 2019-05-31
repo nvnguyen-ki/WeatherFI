@@ -51,7 +51,7 @@ weatherForm.addEventListener('submit', (e) => {
         
       }
       if(data.forecast.singleData == 'snow') {
-        document.querySelector(".main-content").style.background = 'url(https://media.giphy.com/media/IrWhoTEN1Xr44/giphy.gif)';
+        document.querySelector(".main-content").style.background = 'url(https://media.giphy.com/media/Le0YdjvkL1bOg/giphy.gif)';
         document.querySelector(".main-content").style.backgroundSize = 'cover';
         document.querySelector(".main-content").style.backgroundPosition = 'center';
         document.getElementById("songsrc").src = 'audio/snow2.mp3';
