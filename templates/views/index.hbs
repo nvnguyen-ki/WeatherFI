@@ -7,12 +7,19 @@
 }</style>
 
 <head>
- 
-  <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
   <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" href="/img/icon.png">
   
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <button class="button-rain" style="vertical-align:middle">
     </button>
@@ -25,65 +32,76 @@
     <button class="button-snow" style="vertical-align:middle">
     </button>
 <body onload="document.body.style.opacity='1'">
-  
+ 
   {{!-- audio controlls --}}
 <div>
     <button id="play" onclick="document.getElementById('songsrc').play()"></button>
     <button id="pause" onclick="document.getElementById('songsrc').pause()"></button>
     <button id="mute" onclick="document.getElementById('songsrc').muted=!document.getElementById('songsrc').muted"></button>
 </div>
-  {{!-- theme'd buttons --}}
-  <div class="main-content">
+</div><div id="section2";> 
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+     <nav id="nav">
+       <li><a href="/">Home</a></li>
+       <li><a href="#weather-page">Weather.Lofi</a></li>
+     </nav>
+  
+  {{!-- {{>header}} --}}
+</div>
+{{!-- // white space --}}
+<div id="space"></div>
+  {{!-- weather page --}}
+ 
+  <div id="weather-page">
     
     <script src="./dist/app-bundle.js"></script>
     
       <script type="text/javascript">
-
+          // theme'd buttons
           document.querySelector(".button-rain").addEventListener("click", function(){
-          document.querySelector(".main-content").style.background = 'url(https://data.whicdn.com/images/281328506/original.gif)';
-          document.querySelector(".main-content").style.backgroundSize = 'cover';
-          document.querySelector(".main-content").style.backgroundPosition = 'center';
+          document.querySelector("#weather-page").style.background = ' linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://data.whicdn.com/images/281328506/original.gif)';
+          document.querySelector("#weather-page").style.backgroundSize = 'cover';
+          document.querySelector("#weather-page").style.backgroundPosition = 'center';
           document.getElementById("songsrc").src = 'audio/lofiloop.mp3';
           
 
         })
 
         document.querySelector(".button-partlycloudy").addEventListener("click", function(){
-          document.querySelector(".main-content").style.background = 'url(https://media.giphy.com/media/lnq52t8atIw3m/giphy.gif)';
-          document.querySelector(".main-content").style.backgroundSize = 'cover';
-          document.querySelector(".main-content").style.backgroundPosition = 'center';
+          document.querySelector("#weather-page").style.background = ' linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://media.giphy.com/media/lnq52t8atIw3m/giphy.gif)';
+          document.querySelector("#weather-page").style.backgroundSize = 'cover';
+          document.querySelector("#weather-page").style.backgroundPosition = 'center';
           document.getElementById("songsrc").src = 'audio/sunny-song.mp3';
          
         })
 
           document.querySelector(".button-sunny").addEventListener("click", function(){
-          document.querySelector(".main-content").style.background = 'url(https://data.whicdn.com/images/140771342/original.gif)';
-          document.querySelector(".main-content").style.backgroundSize = 'cover';
-          document.querySelector(".main-content").style.backgroundPosition = 'center';
+          document.querySelector("#weather-page").style.background = ' linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://data.whicdn.com/images/140771342/original.gif)';
+          document.querySelector("#weather-page").style.backgroundSize = 'cover';
+          document.querySelector("#weather-page").style.backgroundPosition = 'center';
           document.getElementById("songsrc").src = 'audio/true-sunny.mp3';
         })
 
           document.querySelector(".button-windy").addEventListener("click", function(){
-          document.querySelector(".main-content").style.background = 'url(https://i.pinimg.com/originals/ac/f3/0e/acf30ee54206580bca0cb291eab559f4.gif)';
-          document.querySelector(".main-content").style.backgroundSize = 'cover';
-          document.querySelector(".main-content").style.backgroundPosition = 'center';
+          document.querySelector("#weather-page").style.background = ' linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://i.pinimg.com/originals/ac/f3/0e/acf30ee54206580bca0cb291eab559f4.gif)';
+          document.querySelector("#weather-page").style.backgroundSize = 'cover';
+          document.querySelector("#weather-page").style.backgroundPosition = 'center';
           document.getElementById("songsrc").src = 'audio/windy.mp3';
         })
 
           document.querySelector(".button-snow").addEventListener("click", function(){
-          document.querySelector(".main-content").style.background = 'url(https://media.giphy.com/media/Le0YdjvkL1bOg/giphy.gif)';
-          document.querySelector(".main-content").style.backgroundSize = 'cover';
-          document.querySelector(".main-content").style.backgroundPosition = 'center';
+          document.querySelector("#weather-page").style.background = ' linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://media.giphy.com/media/Le0YdjvkL1bOg/giphy.gif)';
+          document.querySelector("#weather-page").style.backgroundSize = 'cover';
+          document.querySelector("#weather-page").style.backgroundPosition = 'center';
           document.getElementById("songsrc").src = 'audio/snow2.mp3';
         })
-
       </script>
-
     <div id="content-pos">
-   {{>header}}
+   <h1 class="title">{{title}}</h1>
     <p id="question">Check the weather outside?</p>
     <form >
-      <input placeholder="Location" autocorrect="off" spellcheck="false">
+      <input id="input" placeholder="Location" autocorrect="off" spellcheck="false">
       <button class="searchbutton">Search</button>
     </form>
     <p id="highlow" ></p>
@@ -92,7 +110,7 @@
     <p id="message-3"></p>
     {{>footer}}
     <p id="slider">
-    <a href="#section2">Continue</a>
+    <a href="#section2">UP</a>
     
      </p>
     <div id="arrow">
@@ -102,12 +120,6 @@
   
   </div>
   </div>
-    
-  </div><div id="section2";> 
-  <h2>Section 2</h2>
-</div>
-  
-    
 
   <audio id="songsrc" controls loop="true" hidden = "true" autoplay= "true" >
     
@@ -117,5 +129,18 @@
     
 {{!-- this allows users to use document.query --}}
 <script id="doc" src="/js/app.js"></script>
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("nav").style.top = "0";
+  } else {
+    document.getElementById("nav").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
 </body>
 </html>
