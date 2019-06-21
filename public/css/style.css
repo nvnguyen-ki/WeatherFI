@@ -1,5 +1,39 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:500);
-
+#section1 {
+  flex-grow: 1;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:969px;
+  overflow:hidden;
+  display:flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+}
+#WeatherBox a{
+  padding: 100px;
+  color:white;
+  text-decoration: none;
+  position: absolute; top:140px; left:100px;
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://data.whicdn.com/images/281328506/original.gif);
+  background-size:cover;
+  background-position: center;
+}
+#WeatherBox a:hover {      
+  border: 2px solid #0099CC;
+  
+}
+#title{
+  position: absolute; top:30px;
+  left: 740px;
+  font-size: 35px;
+  
+  border-bottom: 0.5px solid white;
+  
+}
 body{
   color: white;
   font: 14px "Century Gothic", Futura, sans-serif;
@@ -224,29 +258,6 @@ header a:hover {
 
 
 
-#section1 {
-  flex-grow: 1;
-  background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height:969px;
-  overflow:hidden;
-  display:flex;
-  flex-direction: column;
-  margin: 0px;
-  padding: 0px;
-}
-#WeatherBox a{
-  padding: 100px;
-  color:white;
-  text-decoration: none;
-  position:relative; top:140px; left:100px;
-  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://data.whicdn.com/images/281328506/original.gif);
-  background-size:cover;
-  background-position: center;
-}
 
 
 input{
@@ -300,15 +311,13 @@ p{
 }
 /* button setup */
 .button-rain{
-  position: fixed; left: 0px; top: 45px;
- 
+  position: fixed; left: 0px; top: 0px;
   border: none;  
   height: 45px;
   width: 45px;
   background: url(https://cdn.dribbble.com/users/141880/screenshots/1969172/weatherlorerain.gif);
   background-size:cover;
   background-position: center;
-  
   -webkit-box-sizing: border-box; 
   -moz-box-sizing: border-box; 
   box-sizing: border-box; 
@@ -320,8 +329,7 @@ p{
 }
 
 .button-partlycloudy{
-  
-  position: fixed; left: 0px; top: 90px;
+  position: fixed; left: 0px; top: 45px;
   border: none;  
   height: 45px;
   width: 45px;
@@ -340,7 +348,7 @@ p{
 }
 
 .button-sunny{
-  position: fixed; left: 0px; top:135px;
+  position: fixed; left: 0px; top:90px;
   border: none;  
   height: 45px;
   width: 45px;
@@ -361,7 +369,7 @@ p{
 
 
 .button-windy{
-  position: fixed; left: 0px; top: 180px;
+  position: fixed; left: 0px; top: 135px;
   border: none;  
   height: 45px;
   width: 45px;
@@ -381,7 +389,7 @@ p{
 }
 
 .button-snow{
-  position: fixed; left: 0px; top:225px;
+  position: fixed; left: 0px; top:180px;
   border: none;  
   height: 45px;
   width: 45px;

@@ -4,6 +4,7 @@
   <style>
   #section1{
   background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/img/lina-loos-189519-unsplash.jpg");
+   
 }</style>
 
 <head>
@@ -21,16 +22,7 @@
   
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<button class="button-rain" style="vertical-align:middle">
-    </button>
-    <button class="button-partlycloudy" style="vertical-align:middle">      
-    </button>
-    <button class="button-sunny" style="vertical-align:middle">
-    </button>
-    <button class="button-windy" style="vertical-align:middle">
-    </button>
-    <button class="button-snow" style="vertical-align:middle">
-    </button>
+
 <body onload="document.body.style.opacity='1'">
  
   {{!-- audio controlls --}}
@@ -40,7 +32,7 @@
     <button id="mute" onclick="document.getElementById('songsrc').muted=!document.getElementById('songsrc').muted"></button>
 </div>
 </div><div id="section1";> 
-
+<p id="title">Enjoyable Tools</p>
   <p id="WeatherBox">
     <a href="#weather-page">Weather.LOFI</a>
   </p>
@@ -51,7 +43,16 @@
   {{!-- weather page --}}
  
   <div id="weather-page">
-    
+    <button class="button-rain" style="vertical-align:middle">
+    </button>
+    <button class="button-partlycloudy" style="vertical-align:middle">      
+    </button>
+    <button class="button-sunny" style="vertical-align:middle">
+    </button>
+    <button class="button-windy" style="vertical-align:middle">
+    </button>
+    <button class="button-snow" style="vertical-align:middle">
+    </button>
     <script src="./dist/app-bundle.js"></script>
     
       <script type="text/javascript">
@@ -116,7 +117,11 @@
   
   </div>
   </div>
-
+  </div>
+  {{!-- project 2 --}}
+  <div id="?">
+    
+  </div>
   <audio id="songsrc" controls loop="true" hidden = "true" autoplay= "true" >
     
   <source src="audio/lofiloop.mp3" type="audio/mpeg">
