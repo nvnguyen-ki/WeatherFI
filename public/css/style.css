@@ -110,7 +110,7 @@ header a:hover {
 
 /* Styling the continue linker */
 #slider a {
-  position: relative; top:500px;
+  position: relative; top:560px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -202,7 +202,7 @@ header a:hover {
 	transform: translateY(0%);
 }
 #arrow{
-  position: relative; top:390px; left:275px;
+  position: relative; top:440px; left:275px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -224,7 +224,7 @@ header a:hover {
 
 
 
-#section2 {
+#section1 {
   flex-grow: 1;
   background-position: center;
   -webkit-background-size: cover;
@@ -238,21 +238,14 @@ header a:hover {
   margin: 0px;
   padding: 0px;
 }
-/* space in between page */
-#space{
-  flex-grow: 1;
-  background-color: whitesmoke;
+#WeatherBox a{
+  padding: 100px;
+  color:white;
+  text-decoration: none;
+  position:relative; top:140px; left:100px;
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://data.whicdn.com/images/281328506/original.gif);
+  background-size:cover;
   background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height:10px;
-  overflow:hidden;
-  display:flex;
-  flex-direction: column;
-  margin: 0 auto;
-  padding: 0 16px;
 }
 
 
@@ -279,7 +272,7 @@ p{
 
 .title {
   font-weight: 100;
-  position:relative;
+  position:relative; top: 20px;
   
 }
 
@@ -454,29 +447,3 @@ p{
   border: 2px solid crimson;
   
 }
-
-#nav{
-  position:fixed;
-  width: 100%;
-  height: 45px;
-	float: left;
-	margin: 0;
-	padding: 0;
-	background-color: #f2f2f2;
-  border-bottom: 1px solid #ccc;
-  transition: top 0.3s;
-}
-
-#nav li{
-  float:left;
-}
-
-#nav li a{
-  display: block;
-	padding: 0px 13px;
-	text-decoration: none;
-	font-weight: bold;
-	color: #069;
-	border-right: 1px solid #ccc; 
-}
-

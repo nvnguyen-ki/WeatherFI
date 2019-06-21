@@ -2,8 +2,8 @@
 
 <html>
   <style>
-  #section2{
-  background-image:url("/img/2048x1152.jpg");
+  #section1{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/img/lina-loos-189519-unsplash.jpg");
 }</style>
 
 <head>
@@ -39,18 +39,15 @@
     <button id="pause" onclick="document.getElementById('songsrc').pause()"></button>
     <button id="mute" onclick="document.getElementById('songsrc').muted=!document.getElementById('songsrc').muted"></button>
 </div>
-</div><div id="section2";> 
+</div><div id="section1";> 
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-     <nav id="nav">
-       <li><a href="/">Home</a></li>
-       <li><a href="#weather-page">Weather.Lofi</a></li>
-     </nav>
+  <p id="WeatherBox">
+    <a href="#weather-page">Weather.LOFI</a>
+  </p>
   
-  {{!-- {{>header}} --}}
+ 
 </div>
-{{!-- // white space --}}
-<div id="space"></div>
+
   {{!-- weather page --}}
  
   <div id="weather-page">
@@ -110,8 +107,7 @@
     <p id="message-3"></p>
     {{>footer}}
     <p id="slider">
-    <a href="#section2">UP</a>
-    
+    <a href="#section1">UP</a>
      </p>
     <div id="arrow">
                 <span></span>
