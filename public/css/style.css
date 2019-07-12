@@ -6,7 +6,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height:969px;
+  height:760px;
   overflow:hidden;
   display:flex;
   flex-direction: column;
@@ -51,8 +51,7 @@ html,body {
 
 footer{
   color: black;
-  border-top: 0.5px solid #eeeeee;
-  margin-top: 120px;
+  border-bottom: 0.5px solid white;
   overflow:hidden;
   font-family: Raleway;
 }
@@ -108,7 +107,7 @@ header a:hover {
   width: 0 auto;
   height: 400px;
   overflow: hidden;
- 
+  
 }
 #content-pos{
   display: block;
@@ -122,142 +121,56 @@ header a:hover {
 
 #highlow{
   position:absolute;
-  top:1160px;
+  top:980px;
   
 }
 
 #message-1{
   position: absolute;
-  top:1135px;
+  top:950px;
   
 }
 #message-2{
   position: absolute;
-  top:1185px;
+  top:1010px;
   
 }
 #message-3{
   position: absolute;
-  top:1205px;
+  top:1040px;
   
 }
 
-/* Styling the continue linker */
-#slider a {
-  position: relative; top:560px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height:0px;
-	margin: 15px 25px;
-	outline: none;
-	color: white;
-	text-decoration: none;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-weight: 400;
-	text-shadow: 0 0 1px rgba(255,255,255,0.3);
-  font-size: 1.35em;
-  overflow: hidden;
+#week{
+  position: absolute;
+  top:1070px;
+  
 }
-#slider a:hover,
-#slider a:focus {
-	outline: none;
-}
-#slider a {
-	margin: 0 20px;
-	padding: 18px 20px;
-}
-#slider a::before,
-#slider a::after {
-	display: flex;
-  align-items: center;
-  justify-content: center;
-	width: 100%;
-	height: 3px;
-	background: #fff;
-	content: '';
-	opacity: 0.2;
-	-webkit-transition: opacity 0.3s, height 0.3s;
-	-moz-transition: opacity 0.3s, height 0.3s;
-	transition: opacity 0.3s, height 0.3s;
-}
-#slider a::after {
-	top: 100%;
-	opacity: 0;
-	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
-	transition: transform 0.3s, opacity 0.3s;
-	-webkit-transform: translateY(-10px);
-	-moz-transform: translateY(-10px);
-	transform: translateY(-10px);
-}
-#slider a span:first-child {
-	z-index: 2;
-	display: block;
-	font-weight: 300;
-}
-#slider a span:last-child {
-	z-index: 1;
-	display: block;
-	padding: 8px 0 0 0;
-	color: rgba(0,0,0,0.4);
-	text-shadow: none;
-	text-transform: none;
-	font-style: italic;
-	font-size: 0.75em;
-	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-	opacity: 0;
-	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
-	transition: transform 0.3s, opacity 0.3s;
-	-webkit-transform: translateY(-100%);
-	-moz-transform: translateY(-100%);
-	transform: translateY(-100%);
-}
-#slider a:hover::before,
-#slider a:focus::before {
-	height: 6px;
-}
-#slider a:hover::before,
-#slider a:hover::after,
-#slider a:focus::before,
-#slider a:focus::after {
-	opacity: 1;
-	-webkit-transform: translateY(0px);
-	-moz-transform: translateY(0px);
-	transform: translateY(0px);
-}
-#slider a:hover span:last-child,
-#slider a:focus span:last-child {
-	opacity: 1;
-	-webkit-transform: translateY(0%);
-	-moz-transform: translateY(0%);
-	transform: translateY(0%);
-}
-#arrow{
-  position: relative; top:440px; left:275px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-  width: 200px; 
-  overflow: hidden;
-  margin: 15px 25px;
-}
-#arrow span{
-  display: block;
-  width: 30px;
-  height: 30px;
-  border-bottom: 5px solid white;
-  border-right: 5px solid white;
-  transform: rotate(45deg);
-  margin: -10px;
-  animation: animate 2s infinite;
+#tommorow{
+  position: relative; top:170px; 
+  font-size: 11px;
+  padding: 20px;
+  border-bottom: 0.5px solid white;
+  height: 120px;
+  width: 120px;
 }
 
-
-
+#next{
+  position: relative; top:41px;  left : 200px;
+  font-size: 10px;
+  padding: 20px;
+  border-bottom: 0.5px solid white;
+  height: 120px;
+  width: 120px;
+}
+#afternext{
+  position: absolute; top:1125px;  left : 760px;
+  font-size: 10px;
+  padding: 20px;
+  border-bottom: 0.5px solid white;
+  height: 120px;
+  width: 120px;
+}
 
 
 input{

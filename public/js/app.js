@@ -6,9 +6,10 @@ const highlow = document.querySelector('#highlow')
 const messageOne = document.querySelector('#message-1')
 const messageTwo = document.querySelector('#message-2')
 const messageThree = document.querySelector('#message-3')
-
-
-
+const week = document.querySelector('#week')
+const tommorow = document.querySelector("#tommorow")
+const next = document.querySelector("#next")
+const afternext = document.querySelector("#afternext")
 weatherForm.addEventListener('submit', (e) => {
   e.preventDefault()
   const location = search.value
@@ -22,6 +23,10 @@ weatherForm.addEventListener('submit', (e) => {
       messageTwo.textContent = data.forecast.dataSum
       messageThree.textContent = data.forecast.windspeed
       highlow.textContent = data.forecast.highlow
+      week.textContent = data.forecast.week
+      tommorow.textContent = data.forecast.Tommorow
+      next.textContent = data.forecast.next
+      afternext.textContent = data.forecast.afternext
       // changes atmosphere depending on weather at location
       if(data.forecast.singleData == 'wind') {
         document.querySelector("#weather-page").style.background = 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://i.pinimg.com/originals/ac/f3/0e/acf30ee54206580bca0cb291eab559f4.gif)';
@@ -55,6 +60,7 @@ weatherForm.addEventListener('submit', (e) => {
         document.querySelector("#weather-page").style.backgroundPosition = 'center';
         document.getElementById("songsrc").src = 'audio/snow2.mp3';
       }
+      
       }
     })
   })
