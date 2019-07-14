@@ -27,6 +27,7 @@
  
   {{!-- audio controlls --}}
 <div>
+    <button id="thumbsup" onclick="document.getElementById('songsrc').play()"></button>
     <button id="play" onclick="document.getElementById('songsrc').play()"></button>
     <button id="pause" onclick="document.getElementById('songsrc').pause()"></button>
     <button id="mute" onclick="document.getElementById('songsrc').muted=!document.getElementById('songsrc').muted"></button>
@@ -43,7 +44,7 @@
   {{!-- weather page --}}
  
   <div id="weather-page">
-    <button class="button-rain" style="vertical-align:middle">
+    {{!-- <button class="button-rain" style="vertical-align:middle">
     </button>
     <button class="button-partlycloudy" style="vertical-align:middle">      
     </button>
@@ -52,10 +53,15 @@
     <button class="button-windy" style="vertical-align:middle">
     </button>
     <button class="button-snow" style="vertical-align:middle">
-    </button>
+    </button> --}}
     <script src="./dist/app-bundle.js"></script>
     
-      <script type="text/javascript">
+       <script type="text/javascript">
+
+        document.querySelector("#thumbsup").addEventListener("click", function(){
+        document.getElementById("songsrc").src = 'audio/thank you - keith ape it g ma.mp3';
+        document.getElementById("songsrc").removeAttribute = 'loop'
+       })
           // theme'd buttons
           document.querySelector(".button-rain").addEventListener("click", function(){
           document.querySelector("#weather-page").style.background = ' linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://data.whicdn.com/images/281328506/original.gif)';
@@ -94,7 +100,7 @@
           document.querySelector("#weather-page").style.backgroundPosition = 'center';
           document.getElementById("songsrc").src = 'audio/snow2.mp3';
         })
-      </script>
+      </script> 
     <div id="content-pos">
    <h1 class="title">{{title}}</h1>
     <p id="question">Check the weather outside?</p>
@@ -120,9 +126,9 @@
   <div id="?">
     
   </div>
-  <audio id="songsrc" controls loop="true" hidden = "true" autoplay= "true" >
+  <audio id="songsrc"  hidden = "true" autoplay= "true" >
     
-  <source src="audio/lofiloop.mp3" type="audio/mpeg">
+ 
 
 </audio>
     
