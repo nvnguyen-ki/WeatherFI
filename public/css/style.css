@@ -275,6 +275,9 @@ p{
 #weight1input{
   color:black;
 }
+#submit {
+  position:relative; left:200px;
+}
 /* button setup
 .button-rain{
   position: fixed; left: 0px; top: 0px;
