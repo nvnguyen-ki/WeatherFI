@@ -1,17 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:500);
 #section1 {
   flex-grow: 1;
-  background-position: center;
+  transition: background-image 0.4s ease-in-out;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height:760px;
-  overflow:hidden;
+  min-height: 100vh;
+  max-width: 1000vh;
   display:flex;
   flex-direction: column;
-  margin: 0px;
-  padding: 0px;
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 0 auto;
+  height: 400px;
+  overflow: hidden;
 }
 #WeatherBox a{
   padding: 100px;
@@ -23,6 +26,20 @@
   background-position: center;
 }
 #WeatherBox a:hover {      
+  border: 2px solid #0099CC;
+  
+}
+
+#GradeBox a{
+  padding: 100px;
+  color:white;
+  text-decoration: none;
+  position: absolute; top:140px; left:550px;
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://s3.amazonaws.com/webserver-assets-jackcanfield/wp-content/uploads/2019/01/24194552/visualization-and-motivation.jpg);
+  background-size:cover;
+  background-position: center;
+}
+#GradeBox a:hover {      
   border: 2px solid #0099CC;
   
 }
@@ -148,7 +165,7 @@ header a:hover {
   
 }
 #tommorow{
-  position: relative; top:180px; left:0px;
+  position: relative; top:190px; left:0px;
   font-size: 14px;
   padding: 20px;
   border-bottom: 0.5px solid white;
@@ -157,7 +174,7 @@ header a:hover {
 }
 
 #next{
-  position: relative; top:0px;  left : 205px;
+  position: relative; top:10px;  left : 220px;
   font-size: 14px;
   padding: 20px;
   border-bottom: 0.5px solid white;
@@ -165,7 +182,7 @@ header a:hover {
   width: 150px;
 }
 #afternext{
-  position: absolute; top:1135px;  left : 760px;
+  position: relative; top:-170px;  left : 450px;
   font-size: 14px;
   padding: 20px;
   border-bottom: 0.5px solid white;
@@ -222,6 +239,41 @@ p{
 .searchbutton:focus{
   outline:none !important;
   border: none;
+}
+
+#gradePage {
+  flex-grow: 1;
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://s3.amazonaws.com/webserver-assets-jackcanfield/wp-content/uploads/2019/01/24194552/visualization-and-motivation.jpg);
+
+  transition: background-image 0.4s ease-in-out;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
+  max-width: 1000vh;
+  display:flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 0 auto;
+  height: 400px;
+  overflow: hidden;
+  
+}
+
+#grade1 {
+  position: relative; left:100px;
+ 
+}
+#grade1input{
+  color:black;
+}
+#Weight1{
+  position: relative; left:250px; top:-55px;
+}
+#weight1input{
+  color:black;
 }
 /* button setup
 .button-rain{
@@ -342,7 +394,7 @@ p{
 
 #thumbsup{
   font-family: Raleway;
-  position: fixed; left: 1473px; top: 0px;
+  position: fixed; left: 0px; top: 135px;
   background: url(https://www.pngkit.com/png/detail/159-1599298_facebook-thumbs-up-icon-png-like-icon-material.png);
   background-size: cover;
   background-position: center;
@@ -358,7 +410,7 @@ p{
 
 #mute{
   font-family: Raleway;
-  position: fixed; left: 0px; top: 50px;
+  position: fixed; left: 0px; top: 45px;
   background: url(https://cdn.pixabay.com/photo/2017/11/10/05/34/sound-2935467_960_720.png);
   background-size: cover;
   background-position: center;
@@ -372,7 +424,7 @@ p{
 }
 #pause{
   font-family: Raleway;
-  position: fixed; left: 0px; top: 925px;
+  position: fixed; left: 0px; top: 90px;
   background: url(https://cdn.pixabay.com/photo/2017/11/10/05/34/pause-2935459_960_720.png);
   background-size: cover;
   background-position: center;
