@@ -139,28 +139,28 @@ header a:hover {
 
 #highlow{
   position:absolute;
-  top:980px;
+  left:700px;
   
 }
 
 #message-1{
-  position: absolute;
-  top:950px;
+  position: relative;
+  
   
 }
 #message-2{
-  position: absolute;
-  top:1010px;
+  position: relative;
+ 
   
 }
 #message-3{
-  position: absolute;
-  top:1040px;
+  position: relative;
+  
   
 }
 
 #week{
-  position: absolute;
+  position: re;
   top:1070px;
   
 }
@@ -262,21 +262,61 @@ p{
   
 }
 
-#grade1 {
-  position: relative; left:100px;
- 
-}
+
 #grade1input{
   color:black;
 }
-#Weight1{
-  position: relative; left:250px; top:-55px;
-}
+
 #weight1input{
   color:black;
 }
+#grade2input{
+  color:black;
+}
+
+#weight2input{
+  color:black;
+}
+#grade3input{
+  color:black;
+}
+
+#weight3input{
+  color:black;
+}
+#grade4input{
+  color:black;
+}
+
+#weight4input{
+  color:black;
+}
+#grade5input{
+  color:black;
+}
+
+#weight5input{
+  color:black;
+}
+#grade6input{
+  color:black;
+}
+
+#weight6input{
+  color:black;
+}
 #submit {
-  position:relative; left:200px;
+  position:relative; left:50px;
+}
+#gradeform{
+  color:black;
+  position: relative; left:200px; top:20px;
+}
+#average{
+  position:relative;
+  top:-600px; left:375px;
+  font-size:35px;
+  
 }
 /* button setup
 .button-rain{

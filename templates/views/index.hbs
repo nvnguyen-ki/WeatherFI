@@ -130,32 +130,36 @@
   </div>
   {{!-- project 2 --}}
   <div id="gradePage">
-    <form>
-      <p  id="grade1">Grade 1: <input id="grade1input" type="text" name="grade1" value=' ' style="width: 45px"></p> 
-      <p  id="Weight1">Weight (Percent): <input id = "weight1input" type="text" name="weight1" value=' ' style="width: 45px" ></p> 
-      <input id="submit" type="submit" value="Submit">
+    <form id="gradeform">
+      <script id="doc" src="/js/calculate.js"></script>
+      <p  id="grade1">Grade 1: <input id="grade1input" type="number"  placeholder=""  style="width: 80px"></p> 
+      <p  id="Weight1">Weight (Percent): <input id = "weight1input" type="number"  style="width: 80px" ></p> 
+      <p  id="grade2">Grade 2: <input id="grade2input" type="number"  placeholder=""  style="width: 80px"></p> 
+      <p  id="Weight2">Weight (Percent): <input id = "weight2input" type="number"  style="width: 80px" ></p> 
+      <p  id="grade3">Grade 3: <input id="grade3input" type="number"  placeholder=""  style="width: 80px"></p> 
+      <p  id="Weight3">Weight (Percent): <input id = "weight3input" type="number"  style="width: 80px" ></p> 
+      <p  id="grade4">Grade 4: <input id="grade4input" type="number"  placeholder=""  style="width: 80px"></p> 
+      <p  id="Weight4">Weight (Percent): <input id = "weight4input" type="number"  style="width: 80px" ></p> 
+      <p  id="grade5">Grade 5: <input id="grade5input" type="number"  placeholder=""  style="width: 80px"></p> 
+      <p  id="Weight5">Weight (Percent): <input id = "weight5input" type="number"  style="width: 80px" ></p> 
+      <p  id="grade6">Grade 6: <input id="grade6input" type="number"  placeholder=""  style="width: 80px"></p> 
+      <p  id="Weight6">Weight (Percent): <input id = "weight6input" type="number"  style="width: 80px" ></p> 
+      <input id="submit" type="button" onclick="calculate()" value="Calculate">
+      
+      <p id="average"></p>
+            
+      
     </form>
   </div>
   <audio id="songsrc"  hidden = "true" autoplay= "true" >
     
- 
+ xxxx
 
 </audio>
-    
-{{!-- this allows users to use document.query --}}
+
+
 <script id="doc" src="/js/app.js"></script>
-<script>
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("nav").style.top = "0";
-  } else {
-    document.getElementById("nav").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-}
-</script>
+
 
 </body>
 </html>
