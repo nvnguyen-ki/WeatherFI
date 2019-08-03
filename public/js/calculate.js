@@ -37,7 +37,7 @@ function calculate(){
             document.getElementById("average").innerHTML= 
             "Grade avg: " + total_grade + " [C]"
         }
-        else if (total_grade<70) {
+        else if (total_grade<70 && total_grade>59) {
             document.getElementById("average").innerHTML= 
             "Grade avg: " + total_grade + " [D]"
         }
