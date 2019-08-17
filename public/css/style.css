@@ -20,7 +20,7 @@
   padding: 100px;
   color:white;
   text-decoration: none;
-  position: absolute; top:140px; left:100px;
+  position: relative; top:200px; left:100px;
   background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://data.whicdn.com/images/281328506/original.gif);
   background-size:cover;
   background-position: center;
@@ -34,7 +34,7 @@
   padding: 100px;
   color:white;
   text-decoration: none;
-  position: absolute; top:140px; left:550px;
+  position: relative; top:165px; left:560px;
   background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://s3.amazonaws.com/webserver-assets-jackcanfield/wp-content/uploads/2019/01/24194552/visualization-and-motivation.jpg);
   background-size:cover;
   background-position: center;
@@ -43,6 +43,21 @@
   border: 2px solid #0099CC;
   
 }
+
+#world_clock a{
+  padding: 100px;
+  color:white;
+  text-decoration: none;
+  position: relative; top:130px; left:1100px;
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://thumbs.gfycat.com/FluidCarelessEmeraldtreeskink-size_restricted.gif);
+  background-size:cover;
+  background-position: center;
+}
+#world_clock a:hover {      
+  border: 2px solid #0099CC;
+  
+}
+
 #title{
   position: absolute; top:30px;
   left: 700px;
@@ -318,6 +333,31 @@ p{
   font-size:35px;
   
 }
+
+/* world clock */
+
+#worldclock {
+  flex-grow: 1;
+  background: lightblue;
+  transition: background-image 0.4s ease-in-out;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  max-width: 1000vh;
+  display:flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 0 auto;
+  height: 400px;
+  overflow: hidden;
+  
+}
+
+
 /* button setup
 .button-rain{
   position: fixed; left: 0px; top: 0px;
