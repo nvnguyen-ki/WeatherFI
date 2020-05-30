@@ -1,2 +1,2 @@
 # web-project
-A project to learn node.js/html/css or web-development in general
+first project for me to learn node.js/html/css or web-development in general
