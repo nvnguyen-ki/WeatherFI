@@ -1,5 +1,5 @@
 # de-stressfi project
-first project for me to learn node.js/html/css and web-development in general
+ project to learn node.js/html/css and web-development in general
 
 
 ## Motivation
